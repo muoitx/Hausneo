@@ -1,0 +1,145 @@
+/*
+	Trần Mười
+	Skype	: tranxuanmuoi.pnv2t
+	Mail	: muoitx.pnv@gmail.com
+	Facebook: https://www.facebook.com/OutG0ing
+*/
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote, a, address, em, img, strong, dl, dt, dd, ul, li, fieldset, form, label, legend{
+	border: 0;
+	font-family: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+}
+:focus{
+	outline: 0;
+}
+ol,ul{
+	list-style: none;
+}
+
+img {
+	width: auto\9 ;
+	height: auto ;
+	max-width: 100% ;
+	vertical-align: middle ;
+	-ms-interpolation-mode: bicubic;
+}
+
+figure{
+	margin: 0;
+}	
+
+table{
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+}
+	
+
+html,
+body{
+	font-size: 10px;
+}
+
+body{
+	word-break: break-word;
+}
+
+h1,h2,h3, h4, h5, h6{
+	line-height: normal;
+	font-weight: normal;
+}
+
+input,select,textarea{
+	color: #38444f;
+}
+
+
+input:focus,select:focus,textarea:focus,a:link,a:visited,a:hover,a:focus{
+	outline: none;
+}
+
+a:link,a:visited,a:hover,a:focus{
+	text-decoration: none;
+	outline: none;
+	outline-offset: 0;
+}
+
+a:link,a:visited{
+	color: #000;
+}
+
+a:hover,a:focus{
+	color: #43f812;
+}
+
+*{
+	box-sizing: border-box;
+}
+.hbg{
+	width: 30px;
+	height: 2px;
+	background-color: #f05023;
+	border-radius: 4px;
+	position: absolute;
+	transition-property: transform;
+	transition-duration: 0.15s;
+	transition-timing-function: ease;
+}
+.hamburger {
+	display: none;
+	cursor: pointer;
+	transition-property: opacity, filter;
+	transition-duration: 0.15s;
+	transition-timing-function: linear;
+	overflow: hidden;
+	.hamburger-box {
+		width: 30px;
+		height: 20px;
+		display: block;
+		position: relative;
+		.hamburger-inner {
+			display: block;
+			top: 50%;
+			margin-top: -1px;
+			@extend .hbg;
+			transition: background-color 0.125s 0.175s ease-in;
+			&::before{
+				@extend .hbg;
+				content: "";
+    		display: block;
+    		top: -9px;
+    		left: 0;
+		    transition: transform 0.125s cubic-bezier(0.6, 0.04, 0.98, 0.335), top 0.05s 0.125s linear, left 0.125s 0.175s ease-in;
+			}
+			&::after{
+				@extend .hbg;
+				content: "";
+    		display: block;
+    		bottom: -9px;
+    		right: 0;
+				transition: transform 0.125s cubic-bezier(0.6, 0.04, 0.98, 0.335), top 0.05s 0.125s linear, right 0.125s 0.175s ease-in;
+			}
+		}
+	}
+	&.is-active{
+		.hamburger-inner {
+			transition-delay: 0s;
+			transition-timing-function: ease-out;
+			background-color: transparent;
+			&::before{
+				left: -80px;
+				top: -80px;
+				transform: translate3d(80px, 80px, 0) rotate(45deg);
+				transition: left 0.125s ease-out, top 0.05s 0.125s linear, transform 0.125s 0.175s cubic-bezier(0.075, 0.82, 0.165, 1);
+			}
+			&::after{
+				right: -80px;
+				top: -80px;
+				transform: translate3d(-80px, 80px, 0) rotate(-45deg);
+				transition: right 0.125s ease-out, top 0.05s 0.125s linear, transform 0.125s 0.175s cubic-bezier(0.075, 0.82, 0.165, 1);
+			} 
+		}
+	}
+}
