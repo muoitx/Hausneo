@@ -14,29 +14,43 @@
   <meta property="og:image" content="">
   <meta property="og:description" content="">
   <meta property="og:type" content="website">
+  
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,700&amp;subset=vietnamese" rel="stylesheet">
 
-  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="common/css/common.css">
+  <link rel="stylesheet" href="css/vegas.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <div id="wrapper" class="wrapper">
     <header class="header" id="header">
-      <h1 class="logo"><a href="index.html"><img src="images/logo.png" alt="Hausneo" /></a></h1>
+      <h1 class="logo"><a href="index.html"><img src="common/images/logo.png" alt="Hausneo" /></a></h1>
       <nav class="menu">
         <ul>
-          <li><a href="project.html">Dự án</a></li>
-          <li><a href="location.html">Vị trí</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="panorama.html">Panorama</a></li>
+          <li><a href="project.html"><i class="ic_prj"></i><span>Dự án</span></a></li>
+          <li><a href="location.html"><i class="ic_lct"></i><span>Vị trí</span></a></li>
+          <li><a href="gallery.html"><i class="ic_glr"></i><span>Gallery</span></a></li>
+          <li><a href="panorama.html"><i class="ic_pnr"></i><span>Panorama</span></a></li>
         </ul>
       </nav><!-- end header -->
+      <div class="derection">
+        <span class="btn_header">Open Close</span>
+        <div class="drt_right">
+          <a href="videos.html" class="ic_vd">Video</a>
+          <a href="#" class="ic_wrt">Write</a>
+        </div> <!-- end drt_right -->
+      </div> <!-- end derection -->
     </header><!-- end header -->
     <main class="content" id="content">
-      <div class="slider" id="slider"></div><!-- end slider -->
+      <div class="slider" id="slider">
+        <div class="main_slider"></div>
+      </div><!-- end slider -->
     </main><!-- content -->
   </div><!-- end wrapper -->
 
   <script src="common/js/jquery-3.2.1.min.js"></script>
+  <script src="js/vegas.min.js"></script>
+  <script src="common/js/common.js"></script>
 </body>
 </html>
