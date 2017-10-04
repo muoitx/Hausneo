@@ -14,8 +14,8 @@ $(document).ready(function(){
 	$("#slider .main_slider").vegas({
 		timer: false,
 		delay: 7000,
+		transition: [ 'fade', 'zoomOut'],
 		transitionDuration: 2000,
-		transition: "random",
     slides: [
       { src: "images/slider.jpg" },
       { src: "images/slider_1.jpg" }
