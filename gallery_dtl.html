@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="Description" content="">
+  <meta name="Keywords" content="">
+  <title>Hausneo</title>
+  
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,700&amp;subset=vietnamese" rel="stylesheet">
+
+  <link rel="stylesheet" href="common/css/common.css">
+  <link rel="stylesheet" href="css/vegas.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/gallery.css">
+  <link rel="stylesheet" href="css/jquery.bxslider.css">
+</head>
+
+<body>
+  <div id="wrapper" class="wrapper">
+    <header class="header" id="header">
+      <h1 class="logo"><a href="index.html"><img src="common/images/logo.png" alt="Hausneo" /></a></h1>
+      <nav class="menu">
+        <ul>
+          <li><a href="project.html"><i class="ic_prj"></i><span>Dự án</span></a></li>
+          <li><a href="location.html"><i class="ic_lct"></i><span>Vị trí</span></a></li>
+          <li class="active"><a href="gallery.html"><i class="ic_glr"></i><span>Gallery</span></a></li>
+          <li><a href="panorama.html"><i class="ic_pnr"></i><span>Panorama</span></a></li>
+        </ul>
+      </nav><!-- end header -->
+      <div class="derection">
+        <span class="btn_header">Open Close</span>
+        <div class="drt_right">
+          <a href="#" class="ic_vd">Video</a>
+          <a href="#" class="ic_wrt">Write</a>
+        </div> <!-- end drt_right -->
+      </div> <!-- end derection -->
+    </header><!-- end header -->
+    <main class="content" id="content">
+      <section class="content_layout gallery_dtl">
+        <h2>Thư viện</h2>
+        <div class="content_block content_flex">
+          <div class="gallery_dtl_tab">
+            <div id="livingroom" class="dtl_tab01 active">
+                <div class="right">  
+                  <ul class="bxslider">
+                    <li><img src="images/gallery-img01.jpg" alt="" /></li>
+                    <li><img src="images/gallery-img02.jpg" alt="" /></li>
+                    <li><img src="images/gallery-img03.jpg" alt="" /></li>
+                  </ul>
+                </div> 
+                <div class="left">
+                  <div class="bx-pager">
+                    <a data-slide-index="0" href=""><img src="images/gallery-img01.jpg" alt="" /></a>
+                    <a data-slide-index="1" href=""><img src="images/gallery-img02.jpg" alt="" /></a>
+                    <a data-slide-index="2" href=""><img src="images/gallery-img03.jpg" alt="" /></a>
+                  </div>
+                </div>
+            </div>
+            <div id="bedroom" class="dtl_tab01">
+              <div class="right">  
+                <ul class="bxslider">
+                  <li><img src="images/gallery-img02.jpg" alt="" /></li>
+                  <li><img src="images/gallery-img01.jpg" alt="" /></li>
+                  <li><img src="images/gallery-img03.jpg" alt="" /></li>
+                </ul>
+              </div> 
+              <div class="left">
+                <div class="bx-pager">
+                  <a data-slide-index="0" href=""><img src="images/gallery-img02.jpg" alt="" /></a>
+                  <a data-slide-index="1" href=""><img src="images/gallery-img01.jpg" alt="" /></a>
+                  <a data-slide-index="2" href=""><img src="images/gallery-img03.jpg" alt="" /></a>
+                </div>
+              </div>
+            </div>
+            <div id="diningroom" class="dtl_tab01">
+                <div class="right">  
+                  <ul class="bxslider">
+                    <li><img src="images/gallery-img03.jpg" alt="" /></li>
+                    <li><img src="images/gallery-img02.jpg" alt="" /></li>
+                    <li><img src="images/gallery-img01.jpg" alt="" /></li>
+                  </ul>
+                </div> 
+                <div class="left">
+                  <div class="bx-pager">
+                    <a data-slide-index="0" href=""><img src="images/gallery-img03.jpg" alt="" /></a>
+                    <a data-slide-index="1" href=""><img src="images/gallery-img02.jpg" alt="" /></a>
+                    <a data-slide-index="2" href=""><img src="images/gallery-img01.jpg" alt="" /></a>
+                  </div>
+                </div>
+            </div>
+            <div id="bathroom" class="dtl_tab01">
+              <div class="right">  
+                  <ul class="bxslider">
+                    <li><img src="images/gallery-img01.jpg" alt="" /></li>
+                    <li><img src="images/gallery-img02.jpg" alt="" /></li>
+                    <li><img src="images/gallery-img03.jpg" alt="" /></li>
+                  </ul>
+                </div> 
+                <div class="left">
+                  <div class="bx-pager">
+                    <a data-slide-index="0" href=""><img src="images/gallery-img01.jpg" alt="" /></a>
+                    <a data-slide-index="1" href=""><img src="images/gallery-img02.jpg" alt="" /></a>
+                    <a data-slide-index="2" href=""><img src="images/gallery-img03.jpg" alt="" /></a>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <ul class="dtl_list">
+            <li class="li01 active"><a href="#livingroom">Living room</a></li>
+            <li class="li02"><a href="#bedroom">Bedroom</a></li>
+            <li class="li03"><a href="#diningroom">dining room</a></li>
+            <li class="li04"><a href="#bathroom">Bathroom</a></li>
+          </ul>
+        </div>
+      </section><!-- end content_layout -->
+    </main><!-- end content -->
+    <footer id="footer">
+      <p class="foot_back"><a href="gallery.html"><img src="images/back.png" alt="" /></a></p>
+    </footer><!-- end footer -->
+  </div><!-- end wrapper -->
+
+  <script src="common/js/jquery-3.2.1.min.js"></script>
+  <script src="js/vegas.min.js"></script>
+  <script src="js/jquery.bxslider.js"></script>
+  <script src="common/js/common.js"></script>
+</body>
+</html>

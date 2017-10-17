@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zxx" class="main_height">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="Description" content="">
+  <meta name="Keywords" content="">
+  <title>Hausneo</title>
+  
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,700&amp;subset=vietnamese" rel="stylesheet">
+
+  <link rel="stylesheet" href="common/css/common.css">
+  <link rel="stylesheet" href="css/vegas.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/gallery.css">
+</head>
+
+<body>
+  <div id="wrapper" class="wrapper pnr_main">
+    <header class="header" id="header">
+      <h1 class="logo"><a href="index.html"><img src="common/images/logo.png" alt="Hausneo" /></a></h1>
+      <nav class="menu">
+        <ul>
+          <li><a href="project.html"><i class="ic_prj"></i><span>Dự án</span></a></li>
+          <li><a href="location.html"><i class="ic_lct"></i><span>Vị trí</span></a></li>
+          <li><a href="gallery.html"><i class="ic_glr"></i><span>Gallery</span></a></li>
+          <li class="active"><a href="panorama.html"><i class="ic_pnr"></i><span>Panorama</span></a></li>
+        </ul>
+      </nav><!-- end header -->
+      <div class="derection">
+        <span class="btn_header">Open Close</span>
+        <div class="drt_right">
+          <a href="#" class="ic_vd">Video</a>
+          <a href="#" class="ic_wrt">Write</a>
+        </div> <!-- end drt_right -->
+      </div> <!-- end derection -->
+    </header><!-- end header -->
+    <main class="content" id="content">
+      <section class="content_layout paronama_block">
+        <h2>Paronama</h2>
+        <div class="content_block">
+          <div class="main_panorama" id="panorama"></div>
+          <div class="panorama_list">
+            <ul class="list01">
+              <li><a href="#">5m</a></li>
+              <li><a href="#">35m</a></li>
+              <li><a href="#">75m</a></li>
+              <li class="active"><a href="#">150m</a></li>
+            </ul>
+            <ul class="list02">
+              <li class="active"><a href="#"></a></li>
+              <li><a href="#"></a></li>
+            </ul>
+          </div>  
+        </div> <!-- end about_project -->
+      </section> <!-- end main_project -->
+    </main><!-- content -->
+    <footer id="footer">
+      <p class="foot_back"><a href="#"><img src="images/back.png" alt="" /></a></p>
+    </footer><!-- end footer -->
+  </div><!-- end wrapper -->
+
+  <script src="common/js/jquery-3.2.1.min.js"></script>
+  <script src="js/vegas.min.js"></script>
+  <script src="common/js/common.js"></script>
+  <script src="360/pano2vr_player.js"></script>
+  <script type="text/javascript">
+    pano=new pano2vrPlayer("panorama");
+    window.addEventListener("load", function() {
+      pano.readConfigUrlAsync("360/pano.xml");
+    });
+  </script>
+</body>
+</html>

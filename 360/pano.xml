@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<panorama appversion="5.1" apprev="15722" id="node1">
+  <input width="3681" levelingpitch="0" levelbias="0.400" leveltileurl="tiles/node1/cf_%c/l_%l/c_%x/tile_%y.jpg" leveltilesize="510" levelingroll="0" overlap="1" height="3681" levelbiashidpi="0.400">
+    <level width="3681" preload="0" predecode="0" height="3681"/>
+    <level width="1840" preload="0" predecode="0" height="1840"/>
+    <level width="920" preload="0" predecode="0" height="920"/>
+    <level width="460" preload="1" predecode="1" height="460"/>
+    <preview color="0x808080" strip="1"/>
+  </input>
+  <view pannorth="0" fovmode="0">
+    <start tilt="0" fov="70" projection="4" pan="0"/>
+    <flyin tilt="-90" fov="170" projection="9" pan="0"/>
+    <min tilt="-90" fov="5" pan="0"/>
+    <max tilt="90" fov="120" fovstereographic="270" pan="360" scaletofit="1" fovfisheye="360"/>
+  </view>
+  <userdata description="" source="" latitude="10.801183" datetime="29/6/17 5:17 PM" customnodeid="" title="DCIM@MEDIADJI_0071.JPG" tags="Follow Up|360_cuong" longitude="106.789029" comment="" copyright="" author="" info=""/>
+  <hotspots width="180" wordwrap="1" height="20">
+    <label width="180" borderradius="1" textcolor="0x000000" bordercolor="0x000000" backgroundalpha="1" enabled="1" wordwrap="1" backgroundcolor="0xffffff" textalpha="1" border="1" height="20" background="1" borderalpha="1"/>
+    <polystyle handcursor="1" bordercolor="0x0000ff" backgroundalpha="0.2509803921568627" backgroundcolor="0x0000ff" mode="0" borderalpha="1"/>
+  </hotspots>
+  <media/>
+  <transition softedge="0" zoomoutpause="1" zoomin="0" zoomout="0" enabled="1" blendtime="1" blendcolor="0x000000" zoomspeed="2" zoomfov="20" type="crossdissolve"/>
+  <control sensitivity="8" simulatemass="1" lockedmouse="0" lockedkeyboardzoom="0" contextprojections="0" lockedkeyboard="0" contextfullscreen="0" invertwheel="0" dblclickfullscreen="0" lockedwheel="0" hideabout="0" invertcontrol="1" rubberband="0" speedwheel="1"/>
+</panorama>

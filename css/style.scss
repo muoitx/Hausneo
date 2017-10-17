@@ -1,12 +1,97 @@
+@import "../common/css/mixins.scss";
+
+
 .slider {
 	width: 100%;
 	height: 100%;
 	position: relative;
-	.main_slider {
-		width: 100%;
-		height: 100% !important;
+	overflow: hidden;
+	// figure {
+	// 	width: 100%;
+	// 	height: 100%;
+	// 	position: absolute;
+	// 	bottom: 0;
+	// 	left: 0;
+	// 	img {
+	// 		max-width: inherit;
+	// 	}
+	// }
+}
+
+// project
+.main_project{
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	position: relative;
+	&::before {
+		content: "";
+		display: block;
+		width: 370px;
+		height: 100%;
+		background: url("../images/mark_project.png") no-repeat center;
+		background-size: cover;
 		position: absolute;
-		top: 0;
 		left: 0;
+		top: 0;
+		z-index: -1;
 	}
+}
+.content_layout {
+	width: 100%;
+	height: 100%;
+	h2 {
+		width: 100%;
+		height: 105px;
+		padding: 0 25px;
+		@include _font(400, 3.4rem, 1, $cl_01);
+		display: flex;
+		align-items: center;
+	}
+	.content_block {
+		width: 100%;
+		height: calc(100% - 105px);
+		background: #ececec;
+		position: relative;
+		figure {
+			height: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			img {
+				max-width: 100%;
+				max-height: 100%;
+			}
+		}
+		ul.lst_floor {
+			width: 135px;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			right: 0;
+			display: flex;
+			flex-wrap: wrap;
+			padding: 15px 0;
+			li {
+				width: 100%;
+				a {
+					display: block;
+					background: url("../images/ic_floor.png") no-repeat left center;
+					@include _font(400, 1.5rem, 1, $cl_01);
+					padding-left: 25px;
+					transition: all .35s ease;
+					&:hover {
+						background-position: 10px center;
+
+					}
+				}
+			}
+		}
+	}
+}
+
+.main_panorama {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
 }

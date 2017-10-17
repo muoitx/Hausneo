@@ -1,10 +1,100 @@
 .slider {
   width: 100%;
   height: 100%;
+  position: relative;
+  overflow: hidden; }
+
+.main_project {
+  width: 100%;
+  height: 100%;
+  background: #fff;
   position: relative; }
-  .slider .main_slider {
-    width: 100%;
-    height: 100% !important;
+  .main_project::before {
+    content: "";
+    display: block;
+    width: 370px;
+    height: 100%;
+    background: url("../images/mark_project.png") no-repeat center;
+    background-size: cover;
     position: absolute;
+    left: 0;
     top: 0;
-    left: 0; }
+    z-index: -1; }
+
+.content_layout {
+  width: 100%;
+  height: 100%; }
+  .content_layout h2 {
+    width: 100%;
+    height: 105px;
+    padding: 0 25px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 3.4rem;
+    line-height: 1;
+    color: #f05326;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .content_layout .content_block {
+    width: 100%;
+    height: calc(100% - 105px);
+    background: #ececec;
+    position: relative; }
+    .content_layout .content_block figure {
+      height: 100%;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+      .content_layout .content_block figure img {
+        max-width: 100%;
+        max-height: 100%; }
+    .content_layout .content_block ul.lst_floor {
+      width: 135px;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      padding: 15px 0; }
+      .content_layout .content_block ul.lst_floor li {
+        width: 100%; }
+        .content_layout .content_block ul.lst_floor li a {
+          display: block;
+          background: url("../images/ic_floor.png") no-repeat left center;
+          font-family: "Montserrat", sans-serif;
+          font-weight: 400;
+          font-size: 1.5rem;
+          line-height: 1;
+          color: #f05326;
+          padding-left: 25px;
+          -webkit-transition: all .35s ease;
+          -o-transition: all .35s ease;
+          transition: all .35s ease; }
+          .content_layout .content_block ul.lst_floor li a:hover {
+            background-position: 10px center; }
+
+.main_panorama {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }

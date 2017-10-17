@@ -1,0 +1,13 @@
+$mont: 'Montserrat', sans-serif;
+
+@mixin _font($fw, $fz, $lh, $cl) {
+  font-family: $mont;
+  font-weight: $fw;
+  font-size: $fz;
+  line-height: $lh;
+  color: $cl;
+}
+// =================================
+$cl_01: #f05326;
+$cl_02: #656769;
+// =================================

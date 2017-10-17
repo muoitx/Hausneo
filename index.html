@@ -1,19 +1,13 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="zxx" class="main_height">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="format-detection" content="telephone=no">
-  <meta name="viewport" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="Description" content="">
   <meta name="Keywords" content="">
-  <title></title>
-
-  <meta property="og:title" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
-  <meta property="og:description" content="">
-  <meta property="og:type" content="website">
+  <title>Hausneo</title>
   
   <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,700&amp;subset=vietnamese" rel="stylesheet">
 
@@ -23,7 +17,7 @@
 </head>
 
 <body>
-  <div id="wrapper" class="wrapper">
+  <div id="wrapper" class="wrapper ind_main">
     <header class="header" id="header">
       <h1 class="logo"><a href="index.html"><img src="common/images/logo.png" alt="Hausneo" /></a></h1>
       <nav class="menu">
@@ -37,20 +31,32 @@
       <div class="derection">
         <span class="btn_header">Open Close</span>
         <div class="drt_right">
-          <a href="videos.html" class="ic_vd">Video</a>
+          <a href="#" class="ic_vd">Video</a>
           <a href="#" class="ic_wrt">Write</a>
         </div> <!-- end drt_right -->
       </div> <!-- end derection -->
     </header><!-- end header -->
     <main class="content" id="content">
       <div class="slider" id="slider">
-        <div class="main_slider"></div>
+        <figure><img src="images/slider.jpg" alt="Hausneo" /></figure>
       </div><!-- end slider -->
     </main><!-- content -->
   </div><!-- end wrapper -->
+  
+  <div id="video" class="video">
+    <div class="main_video">
+      <div id="player"></div>
+      <div id="thumbnail_container" class="thumbnail_container">
+        <img id="thumbnail" src="images/video-thumb.jpg" alt="" />
+      </div>
+      <span id="start_video" class="start_video">Play</span>
+      <span id="skip" class="skip">Skip</span>
+    </div> <!-- end main_video -->
+  </div> <!-- end video -->
 
   <script src="common/js/jquery-3.2.1.min.js"></script>
   <script src="js/vegas.min.js"></script>
   <script src="common/js/common.js"></script>
+  <script src="js/hdl.Videos.js"></script>
 </body>
 </html>
